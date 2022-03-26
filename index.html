@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mini-projet</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+        <script src="script.js"></script>
+        <script src="jquery-3.3.1.min.js"></script>
+        <link rel="icon" type="image/png" href="img.png">
+    </head>
+    <body>
+        <h1>Convertisseur de devises</h1>
+
+        <p>Voici un convertisseur automatique qui convertie automatiquement plusieurs des devises les plus utilisées à l'heure actuelle.<br>
+           Pour cela, il suffit juste de choisir la devise utilisée et d'ensuite sélectionner la devise dans laquelle on veut que celle-ci soit convertie.<br>
+           Il suffit ensuite tout simplement de rentrer le montant voulant être converti !<br>
+        </p>
+
+        <div id="box-currency-from">
+        <div>
+            <label id="currency-text" for="user_currency">Rentrez la valeur à convertir</label>
+            <input type="text" id="currency" name="user_currency">
+        </div>
+        <div>
+            <select name="different_currency" id="from-currency-select">
+                <option value="EUR">Euro</option>
+                <option value="USD">Dollar américain</option>
+                <option value="JPY">Yen japonais</option>
+                <option value="GBP">Livre sterling</option>
+                <option value="AUD">Dollar australien</option>
+            </select>
+        </div>
+        </div>  
+        <div id="box-currency-from">
+        <p id="convert">Voici la conversion : </p>
+            <select name="different_currency" id="to-currency-select">
+                <option value="USD">Dollar américain</option>
+                <option value="EUR">Euro</option>
+                <option value="JPY">Yen japonais</option>
+                <option value="GBP">Livre sterling</option>
+                <option value="AUD">Dollar australien</option>
+            </select> 
+        </div>
+
+        <script>
+            const currency = document.getElementById('currency');
+            const from = document.getElementById('from-currency-select');
+            const to = document.getElementById("to-currency-select");
+            currency.addEventListener("keyup", function() {
+                convert_currency(from.value, to.value, currency.value);
+            });
+        </script>
+        <div id="bottom-text">
+            <p>
+                API utilisée : <a target="blank_" href="https://www.frankfurter.app/">Frankfurter</a>
+            </p>
+        </div>
+    </body>
+</html>

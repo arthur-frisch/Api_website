@@ -1,0 +1,62 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgb(165, 159, 159);
+    color: rgb(0, 0, 0)
+}
+
+p {
+    text-align: center;
+    font-size: 150%;
+}
+
+h1 {
+    text-align: center;
+    font-size:325%;
+}
+
+#from-currency-select {
+    margin-top: 1.5%;
+    background-color: rgb(131, 139, 139);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#box-currency-from {
+    text-align: center;
+    padding-top: 4.5%;
+}
+
+#currency-text, #currency, #from-currency-select, #convert, #to-currency-select {
+    font-size: 200%;
+}
+
+#currency-text {
+    margin-right: 2%;
+}
+
+#box-currency-to {
+    margin-bottom: 2%;
+}
+
+#to-currency-select {
+    background-color: rgb(131, 139, 139);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+#currency {
+    background-color: rgb(131, 139, 139);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 0, 0)
+}
+
+#bottom-text {
+    padding-top: 9%;
+    font-size: 85%;
+}
